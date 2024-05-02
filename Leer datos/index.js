@@ -1,0 +1,3 @@
+// Esta función retorna lo que sea que se ingrese
+//en el aviso...
+prompt("Dame tu nombre:");
