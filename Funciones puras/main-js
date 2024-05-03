@@ -1,0 +1,28 @@
+//Funciones puras no producen efectos secundarios
+
+/*cuando se genera o modifica un valor fuera de la
+  función, la función deja de ser pura
+  
+  Es buen apráctica solo usar funciones puras, son fáciles
+  de mantener y modular.
+*/
+
+/*la clave está en no usar operaciones que muten datos
+pasados por referencia*/
+
+function modificador(edades){
+    //se crea una copia para no modificar el valor original
+    let copia = [...edades];
+    //se modifica o trabaja la copia 
+    copia = [21,22,23];
+    //siempre retornar el valor copia modificado
+    return copia;
+}
+
+let edades = [20];
+
+console.log(edades);
+console.log(modificador(edades));
+//en la reproducción podemos ver que no se muta el objeto original
+console.log(edades);
+
