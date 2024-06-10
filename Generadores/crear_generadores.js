@@ -27,3 +27,20 @@ console.log(generador.next());
  * function y un asterisco "*" en function -> function* nom_función
  * el objeto retornado posee los atributos {value:XXX done:false/true}
  */
+
+console.log("------------------------------------------------");
+/**
+ * De manera implicita un generador retorna un iterador, como su objeto
+ * {value:XXX done:false/true}, usando yield se hacen las pausas a la ejecución
+ * de la función, pero si se usa return, la función automáticamente 
+ * retorna {done:true} como verdadero, terminando la función generador.
+ */
+function* retornador(){
+    return 18;
+}
+
+let ret = retornador();
+
+console.log(ret.next());//se ejecuta una vez
+console.log(ret.next());//ya no tiene valor por que la función ya terminó
+console.log(ret.next());//ya no tiene valor por que la función ya terminó
