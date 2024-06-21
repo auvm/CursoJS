@@ -4,7 +4,6 @@
 */
 
 
-
 let numbers = [1, 2, 3, 4, 5, 7];
 
 /*Ejemplo de una función que devuelve
@@ -31,6 +30,8 @@ console.log(map_squares);
 /*Ejemplo, pasando de cadenas a enteros
   Nota: la función map no es mutable
   (no altera la variable original)
+
+  UPDATE: porque todas las cadenas son inmutables
 */
 let cadenas = ["1", "3", "5", "7"];
 let int_cadenas = cadenas.map(function(string_num){

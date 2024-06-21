@@ -19,6 +19,6 @@ mi_objeto[simbolo]();
  * reemplazar por otra instrucción dentro de grandes
  * cantidades de código.
  * 
- * No obstante los usos específicos de los símbolos
+ * No obstante los casos de usos específicos de los símbolos
  * son muy particulares.
  */
